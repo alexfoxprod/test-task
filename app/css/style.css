@@ -223,9 +223,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #fff;
-  height: 100vh;
-  min-height: 600px; }
+  background-color: #fff; }
 
 .services-wrapper {
   display: -webkit-box;
@@ -244,6 +242,7 @@ body {
   width: 1206px; }
 
 .service-item {
+  margin-top: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,6 +263,71 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 525px;
-  height: 525px;
+  width: 50%;
+  margin-right: 50px;
+  padding-left: 83px;
   background: url(../img/circle-img.svg) no-repeat; }
+
+.phone-img {
+  padding-right: 40%;
+  padding-left: 62px; }
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 50%; }
+
+.right h2 {
+  color: #00a031; }
+
+.right button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 208px;
+  height: 54px;
+  background: transparent;
+  color: #00a031;
+  border: 2px solid #00a031;
+  border-radius: 28px;
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center; }
+
+.check-mark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.descr,
+.p-item,
+i {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #6c6c6c; }

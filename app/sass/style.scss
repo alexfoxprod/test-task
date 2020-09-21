@@ -180,8 +180,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  height: 100vh;
-  min-height: 600px;
 }
 .services-wrapper {
   display: flex;
@@ -191,6 +189,7 @@ body {
   width: 1206px;
 }
 .service-item {
+  margin-top: 92px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -199,7 +198,56 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 525px;
-  height: 525px;
+  width: 50%;
+  margin-right: 50px;
+  padding-left: 83px;
+  // height: 100%;
   background: url(../img/circle-img.svg) no-repeat;
+}
+.phone-img {
+  padding-right: 40%;
+  padding-left: 62px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  h2 {
+    color: #00a031;
+  }
+}
+.right {
+  button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 208px;
+    height: 54px;
+    background: transparent;
+    color: #00a031;
+    border: 2px solid #00a031;
+    border-radius: 28px;
+    font-family: "Gilroy ExtraBold", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+}
+.check-mark {
+  display: flex;
+  flex-direction: row;
+}
+.descr,
+.p-item,
+i {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #6c6c6c;
 }
