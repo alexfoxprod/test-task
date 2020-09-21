@@ -233,9 +233,9 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -257,6 +257,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 75px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -269,10 +270,11 @@ body {
   background: url(../img/circle-img.svg) no-repeat; }
 
 .phone-img {
-  padding-right: 40%;
-  padding-left: 62px; }
+  padding-right: 62px; }
 
 .right {
+  margin-top: 179px;
+  margin-left: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,6 +294,7 @@ body {
   color: #00a031; }
 
 .right button {
+  margin-top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,3 +334,14 @@ i {
   line-height: 24px;
   letter-spacing: 0.2px;
   color: #6c6c6c; }
+
+.reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  margin-top: 0;
+  margin-right: 75px; }
