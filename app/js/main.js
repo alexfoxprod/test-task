@@ -68,3 +68,10 @@ $(function () {
     player.stopVideo();
   }
 });
+new hoverEffect({
+  parent: document.querySelector(".distortion"),
+  intensity: 0.2,
+  image1: "./img/Minie.jpg",
+  image2: "./img/julia.jpg",
+  displacementImage: "./img/heighMap.png",
+});
