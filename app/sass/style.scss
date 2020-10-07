@@ -22,17 +22,21 @@ body {
   //   background: url(../img/image1.png) no-repeat center;
   //   background-size: cover;
   position: relative;
-}
-.main-overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background: linear-gradient(180deg, #050d1d 11.29%, rgba(5, 13, 29, 0) 90.3%);
-  mix-blend-mode: normal;
-  opacity: 0.6;
+  &-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: linear-gradient(
+      180deg,
+      #050d1d 11.29%,
+      rgba(5, 13, 29, 0) 90.3%
+    );
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
 }
 nav {
   display: flex;
@@ -56,14 +60,15 @@ nav {
 }
 .burger {
   display: none;
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.4s ease;
+  }
 }
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px;
-  transition: all 0.4s ease;
-}
+
 @media screen and (max-width: 1024px) {
   body {
     overflow-x: hidden;
@@ -85,13 +90,13 @@ nav {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     // z-index: 3;
-  }
-  .nav-links li {
-    opacity: 0;
-    margin-top: 50px;
-  }
-  .nav-links a {
-    font-size: 20px;
+    li {
+      opacity: 0;
+      margin-top: 50px;
+    }
+    a {
+      font-size: 20px;
+    }
   }
   .burger {
     display: block;
@@ -245,21 +250,22 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-}
-.services-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 1206px;
-}
-.service-item {
-  margin-top: 92px;
-  display: flex;
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1206px;
+  }
+  &-item {
+    margin-top: 92px;
+    display: flex;
 
-  justify-content: center;
-  align-items: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
+
 .left {
   display: flex;
   margin-left: 75px;
@@ -287,11 +293,9 @@ nav {
   justify-content: center;
   align-items: flex-start;
   width: 50%;
-}
-h2 {
-  color: #00a031;
-}
-.right {
+  h2 {
+    color: #00a031;
+  }
   button {
     margin-top: 32px;
     display: flex;
@@ -310,6 +314,7 @@ h2 {
     text-align: center;
   }
 }
+
 .check-mark {
   display: flex;
   flex-direction: row;
@@ -341,21 +346,23 @@ i {
     justify-content: center;
     align-items: center;
     width: 100%;
+    &-item {
+      margin-top: 25px;
+      flex-direction: column;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
-  .service-item {
-    margin-top: 25px;
-    flex-direction: column;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+
   .reverse {
     margin-right: 0px;
+    .phone-img {
+      transform: rotate(12deg) translate(3px, 50px);
+    }
   }
-  .reverse .phone-img {
-    transform: rotate(12deg) translate(3px, 50px);
-  }
+
   .left {
     display: flex;
     margin: 0;
@@ -385,6 +392,7 @@ i {
   // background-color: yellow;
 }
 .teams-wrapper {
+  margin-top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
